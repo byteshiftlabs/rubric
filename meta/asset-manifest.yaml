@@ -38,7 +38,6 @@ assets:
       - the host only needs a routing entrypoint and will fetch guides later
     files:
       - development/api-design.md
-      - development/chain-of-thought.md
       - development/code-review.md
       - development/commands.md
       - development/context-management.md
