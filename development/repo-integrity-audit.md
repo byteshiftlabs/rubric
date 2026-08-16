@@ -90,6 +90,12 @@ scenarios, only what you're checking against differs:
 
 - **Duplicated / irrelevant / obsolete content.** Cross-file duplication,
   sections that no longer apply, placeholder text that outlived its purpose.
+- **Unrequested AI additions.** Sections, rules, or files that read as
+  generated on the assistant's own initiative rather than asked for —
+  generic "Core Principle" / "Purpose" / "Why This Matters" boilerplate,
+  invented performance numbers, or filler that restates the obvious. Flag
+  these for the owner to confirm before keeping; do not assume something is
+  wanted just because it already exists in the repo.
 - **Plain English.** Rewrite for a reader with no prior context on the
   project — no jargon, no convoluted wording, no unexplained acronyms.
 - **Dead links.** Check every external/internal link resolves — a link
