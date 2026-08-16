@@ -63,13 +63,13 @@ An example MCP client config is in [.vscode/mcp.json](.vscode/mcp.json).
 
 - [core](core) — rules that stay the same across tasks and models
 - [development](development) — one guide per kind of task: coding, review, tests, debugging, git, and audits
-- [setup](setup) — project setup, architecture, documentation, and reproducibility guidance
+- [setup](setup) — project setup, architecture, documentation, prose style, and reproducibility guidance
 - [meta](meta) — machine-readable index of every guide, for tools that package or search this repo
 - `rubric_mcp.py`, `pyproject.toml` — the MCP server that exposes this repo as callable tools
 
 ## Disclaimer
 
-This repository is provided for reference. byteshiftlabs is not responsible for any actions, decisions, or consequences that result from using it, including anything done by an AI agent following this guidance. Use is at your own risk.
+This repository is provided for reference. Its authors are not responsible for any actions, decisions, or consequences that result from using it, including anything done by an AI agent following this guidance. Use is at your own risk.
 
 See [LICENSE](LICENSE) for the separate software warranty disclaimer.
 

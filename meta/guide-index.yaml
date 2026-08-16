@@ -241,6 +241,14 @@ guides:
     load_when: [writing READMEs, module docs, or explanatory documentation]
     avoid_when: [documentation is not part of the task]
     tags: [setup, docs, writing]
+  - path: setup/prose-style.md
+    title: Prose Style
+    kind: guide
+    pack: task-workflows
+    summary: Catalogue of stylistic tropes that mark prose as machine-written, with a grep set for the mechanical ones.
+    load_when: [writing or editing any prose deliverable, reviewing documentation for style, prose reads as AI-generated]
+    avoid_when: [the task produces only code and no prose]
+    tags: [setup, docs, writing, style, review]
   - path: setup/reproducibility.md
     title: Reproducibility
     kind: guide

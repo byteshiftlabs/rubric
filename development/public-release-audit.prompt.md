@@ -44,7 +44,7 @@ Additional rules for this release audit:
 - Do not treat checklist completion as proof; verify with code, tests, docs, or commands.
 - If runtime verification is needed, say exactly what should be run.
 - If the repository is too large for full confidence, state the exact limit and what remains unchecked.
-- For byteshiftlabs repositories, keep the audit findings file local-only. Do not commit or push it.
+- Keep the audit findings file local-only. Do not commit or push it.
 - End with a clear release recommendation: release now / do not release, plus preconditions.
 ```
 

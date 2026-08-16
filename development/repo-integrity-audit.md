@@ -302,8 +302,7 @@ template).
   is unclear, a severity/fix-vs-issue call that could go either way, a claim
   that can't be verified from the repo alone — surface it and ask rather
   than guessing silently.
-- For byteshiftlabs repositories, keep the findings file local-only. Do not
-  commit or push it.
+- Keep the findings file local-only. Do not commit or push it.
 
 ## Running This As A Prompt
 
@@ -370,8 +369,7 @@ Rules:
 - If context is too large, state exactly what was not reviewed.
 - If a claim depends on runtime behavior, say how it should be verified.
 - Ask the user for feedback when in doubt rather than guessing silently.
-- For byteshiftlabs repositories, keep [OUTPUT_MD_FILE] local-only. Do not
-  commit or push it.
+- Keep [OUTPUT_MD_FILE] local-only. Do not commit or push it.
 
 [PROJECT_CONTEXT]
 ```

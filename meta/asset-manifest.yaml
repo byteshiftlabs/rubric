@@ -62,6 +62,7 @@ assets:
       - setup/architecture.md
       - setup/dev-principles.md
       - setup/documentation.md
+      - setup/prose-style.md
       - setup/reproducibility.md
 
   - id: mcp-server

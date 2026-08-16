@@ -52,7 +52,7 @@ Branch names must be self-explanatory and follow the pattern:
 The [label] prefix must match an existing GitHub label in the repository.
 If no suitable label exists, suggest creating one before creating the branch.
 
-Examples (using byteshiftlabs standard labels):
+Examples:
 - feature/user-authentication
 - fix/parser-null-pointer
 - code-refactor/remove-magic-numbers
@@ -146,7 +146,7 @@ Release notes must include:
 
 - Keep one logical change per commit
 - Reference issue numbers when applicable (for example, `Fixed #123`)
-- Apply this format consistently across byteshiftlabs repositories unless a repository documents different rules
-- Audit findings files must stay local and must not be pushed to byteshiftlabs repositories
+- Apply this format consistently across a project's repositories unless a repository documents different rules
+- Audit findings files must stay local and must not be pushed to any repository
 - Delete a branch as soon as its PR merges — see Branch Cleanup above
 - Before committing, check whether README.md or ROADMAP.md need updating to reflect the change. See [documentation.md](../setup/documentation.md#keeping-readmemd-and-roadmapmd-in-sync).

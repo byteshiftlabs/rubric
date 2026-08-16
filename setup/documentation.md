@@ -37,7 +37,7 @@ Be clear enough that a new developer can understand the code and work safely in 
 
 ### README generation
 
-This is the recommended template for byteshiftlabs repositories. Adapt sections as needed for the project.
+This is the recommended template. Adapt sections as needed for the project.
 
 ```
 Generate a README for [PROJECT_NAME] following this structure:

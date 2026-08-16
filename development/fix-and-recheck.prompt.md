@@ -58,7 +58,7 @@ Rules:
 - Do not mark an item fixed without evidence from code, tests, docs, or commands.
 - Preserve unresolved items in the findings file; do not delete them to make the file look clean.
 - If new issues are discovered during fixes, append them with the next available severity ID.
-- For byteshiftlabs repositories, keep the findings file local-only and do not commit or push it.
+- Keep the findings file local-only and do not commit or push it.
 - If the workflow includes opening a PR, assign the PR creator and apply the correct existing label(s). If no suitable label exists, suggest creating one and wait for user approval before proceeding.
 ```
 
