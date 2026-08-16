@@ -8,12 +8,6 @@ tags: [workflow, review, quality]
 
 Review code quality with emphasis on readability and maintainability.
 
-## Core Principle
-
-**Code is read far more often than it is written.** Prioritize clarity over cleverness. New contributors should be able to understand the code without reconstructing hidden intent.
-
----
-
 ## Python
 
 ```

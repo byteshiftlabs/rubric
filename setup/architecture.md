@@ -8,12 +8,6 @@ tags: [setup, architecture, design]
 
 Use lightweight architecture principles to keep projects maintainable and scalable.
 
-## Core Principle
-
-**Good architecture makes change easier.** If adding a feature requires modifying many unrelated files, the architecture needs work.
-
----
-
 ## Development Process
 
 A lightweight requirements → design → implementation flow to prevent "code first, think later" problems.

@@ -8,10 +8,6 @@ tags: [workflow, performance, optimization]
 
 Avoid obvious inefficiency without drifting into premature optimization.
 
-## Core Principle
-
-**Avoid obvious inefficiency.** Also avoid spending time on optimizations that do not matter. Most performance problems come from poor algorithm or data-structure choices, not from missing micro-optimizations.
-
 ## Prompt
 
 ```
