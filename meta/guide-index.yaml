@@ -48,14 +48,6 @@ guides:
     load_when: [designing interfaces, evaluating API shape, planning breaking changes]
     avoid_when: [debugging runtime failures]
     tags: [workflow, design, api]
-  - path: development/chain-of-thought.md
-    title: Chain of Thought
-    kind: guide
-    pack: task-workflows
-    summary: Adds explicit staged reasoning for ambiguous or high-complexity tasks.
-    load_when: [the task is ambiguous, high-risk, or needs explicit trade-off analysis]
-    avoid_when: [straightforward edits where concise execution matters more]
-    tags: [workflow, reasoning, ambiguity]
   - path: development/code-review.md
     title: Code Review
     kind: guide

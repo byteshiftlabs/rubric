@@ -33,13 +33,6 @@ If a rule affects correctness, safety, verification, or repository policy, it be
 - repository constraints and style expectations
 - output requirements that matter to automation or review
 
-## What Does Not Belong Here
-
-- model-specific wording preferences
-- repeated reminders added only because one model sometimes drifts
-- task-specific steps that belong in a workflow guide
-- local project details that belong in repository instructions
-
 ## Default Operating Rules
 
 ```text
@@ -66,61 +59,13 @@ For this task, keep the following rules the same across model families:
 
 ## Verdict Rule
 
-If the task ends in a verdict, the verdict must match the evidence.
-
-- A `Go` verdict is allowed only when no known flaws, unresolved findings, or material risks remain for the scope being judged.
-- A `Go with noted risk` verdict, or any equivalent wording that still accepts unresolved risk, is not allowed for an audited project.
-- If flaws remain, use a non-go verdict and name the blocking issues directly.
-- Do not soften this with optimistic wording that contradicts the actual findings.
+A verdict must match the evidence: `Go` only when no known flaws, unresolved findings, or material risks remain in scope. Otherwise, use a non-go verdict and name the blockers directly — no "noted risk" hedging.
 
 ## Failure-Mode Rule
 
-Do not split instructions by model family just because the models feel different.
-
-First identify the failure mode:
-
-- missed constraints
-- excessive verbosity
-- weak decomposition
-- poor tool discipline
-- weak verification
-- format non-compliance
-
-Then change the smallest layer responsible for that failure:
-
-- shared contract if the behavior should not vary
-- model adapter if the issue is model-specific
-- workflow guide if the issue belongs to one task type
+Don't split instructions by model family just because the models feel different. Identify the actual failure mode (missed constraints, verbosity, weak decomposition, poor tool discipline, weak verification, format non-compliance) first, then fix it in the smallest layer responsible: shared contract if the behavior shouldn't vary, model adapter if it's model-specific, workflow guide if it's task-specific.
 
 ## Design Test
 
-Before adding a model-specific rule, ask:
+Before adding a model-specific rule: would it still be correct for every model, and is there repeated evidence rather than one anecdote? If either holds, it belongs in the shared contract instead — a model adapter is only for genuine, evidence-backed model differences.
 
-1. Would this rule still be correct for every model?
-2. Is this about policy or about prompt structure?
-3. Can the problem be fixed by removing conflicting instructions instead of adding more?
-4. Do we have repeated evidence, not just one anecdote?
-
-If the answer to question 1 is yes, keep the rule here.
-
-## Memory Note
-
-Memory behavior is part of the operating contract, but the detailed policy does not live here.
-
-Use [core/memory-contract.md](memory-contract.md) as the source of truth for:
-
-- what counts as real memory support
-- what should and should not be remembered
-- how to separate session, user, and repository memory
-- when stored memory should be updated or removed
-
-This file only establishes the rule that memory behavior should stay consistent across model families when the host supports memory.
-
-## Use With
-
-Use this file with:
-
-- `development/repo-integrity-audit.md` for release gating
-- `core/memory-contract.md` when memory is part of the task
-- `development/model-adapters.md` when prompt structure needs model-specific tuning
-- `development/context-management.md` when session context and memory both matter

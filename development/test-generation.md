@@ -87,3 +87,13 @@ filterwarnings =
 ```
 
 Do not consider generated tests complete until they pass with zero warnings.
+
+## Code Coverage
+
+Run the project's coverage tool alongside the test suite, not as a separate afterthought. Coverage tells you what's untested, not whether what's tested is meaningful — a high percentage with weak assertions is worse than it looks, so treat it as a map of gaps to investigate, not a target to hit for its own sake. Prioritize covering:
+
+- error-handling and edge-case branches, which are the ones most likely to go untested by accident
+- public API surface — every exported function/method should have at least one direct test
+- logic that changed in this task, so regressions in the new code are caught immediately
+
+Don't chase a specific percentage without checking what's actually missing — an untested branch in error handling matters more than one more assertion on an already-covered happy path.

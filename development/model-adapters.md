@@ -261,8 +261,7 @@ These models internally generate a chain of reasoning that is not visible in the
 
 **Do not use with reasoning models:**
 
-- Explicit chain-of-thought instructions ("think step by step", "reason through this in order")
-- Stepped reasoning templates from `chain-of-thought.md` — the model already does this internally
+- Explicit chain-of-thought instructions ("think step by step", "reason through this in order") or stepped reasoning templates — the model already does this internally
 - Over-specified decomposition prompts that prescribe how to reason
 
 **Do use with reasoning models:**
